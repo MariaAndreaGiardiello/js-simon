@@ -26,11 +26,14 @@ while (numbers.length < 5) {
 }
 console.log(numbers);
 
+// 2. creo array per numeri inseriti dall'utente
 let userNum = [];
+console.log(userNum);
+// 3. genero timer per la visualizzazione dell'inserimento dei numeri
 setTimeout (function(){
+    // 3.1 genero ciclo per inserimento numeri fino a 5.
     while (userNum.length < 5) {
         let numChoice = Number(prompt("Inserisci i numeri appena mostrati"));
         userNum.push(numChoice);
     }
-    console.log(userNum);
-},3000)
+},3000)// 3.2 imposto tempo prima di far comparire il prompt
