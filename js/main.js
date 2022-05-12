@@ -29,6 +29,7 @@ console.log(numbers);
 // 2. creo array per numeri inseriti dall'utente
 let userNum = [];
 console.log(userNum);
+
 // 3. genero timer per la visualizzazione dell'inserimento dei numeri
 setTimeout (function(){
     // 3.1 genero ciclo per inserimento numeri fino a 5.
@@ -37,3 +38,19 @@ setTimeout (function(){
         userNum.push(numChoice);
     }
 },3000)// 3.2 imposto tempo prima di far comparire il prompt
+
+// 4. genero varibili per numeri presenti e numeri non presenti
+const win = [];
+const lose = [];
+let numChoice = false
+
+// 5. genero ciclo if per stabilire quali numeri sono stati indovinati e quali no.
+if (numbers.includes(userNum)) {
+    numChoice = true;
+    win.push(userNum);
+} else {
+    lose.push(userNum);
+}
+
+console.log(win);
+console.log(lose);
