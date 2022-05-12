@@ -32,6 +32,5 @@ setTimeout (function(){
         let numChoice = Number(prompt("Inserisci i numeri appena mostrati"));
         userNum.push(numChoice);
     }
+    console.log(userNum);
 },3000)
-
-console.log(userNum);
