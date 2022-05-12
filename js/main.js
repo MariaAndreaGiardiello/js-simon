@@ -17,11 +17,21 @@ function randomNumber(min, max) {
 // 1. Creo costante per contenere i numeri random generati
 const numbers = [];
 //1.2 creo ciclo while per generare numeri fino a 5
-  while (numbers.length < 5) { 
-      let fiveNum = randomNumber(1,100);
-      // proprieta'  "includes" per evitare che venga generato lo stesso numero
-      if (!numbers.includes(fiveNum)){
-        numbers.push(fiveNum);
-      }
-  }
-  console.log(numbers);
+while (numbers.length < 5) { 
+    let fiveNum = randomNumber(1,100);
+    // proprieta'  "includes" per evitare che venga generato lo stesso numero
+    if (!numbers.includes(fiveNum)){
+    numbers.push(fiveNum);
+    }
+}
+console.log(numbers);
+
+let userNum = [];
+setTimeout (function(){
+    while (userNum.length < 5) {
+        let numChoice = Number(prompt("Inserisci i numeri appena mostrati"));
+        userNum.push(numChoice);
+    }
+},3000)
+
+console.log(userNum);
